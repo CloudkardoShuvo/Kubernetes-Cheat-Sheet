@@ -20,7 +20,7 @@ Get system conf via configmap	kubectl -n kube-system get cm kubeadm-config -o ya
 Get deployment yaml	kubectl -n denny-websites get deployment mysql -o yaml
 Explain resource	kubectl explain pods, kubectl explain svc
 Watch pods	kubectl get pods -n wordpress --watch
-Query healthcheck endpoint	curl -L https://127.0.0.1:10250/healthz
+Query healthcheck endpoint	
 Open a bash terminal in a pod	kubectl exec -it storage sh
 Check pod environment variables	kubectl exec redis-master-ft9ex env
 Enable kubectl shell autocompletion	echo "source <(kubectl completion bash)" >>~/.bashrc, and reload
